@@ -1,0 +1,168 @@
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+
+ 
+.event {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+
+ #map {
+  height: 340px;
+  width: 40%;
+  margin-top: -3rem;
+  float: right;
+  margin-left: 5rem;
+  padding: 0;
+  }
+  
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+  }
+
+#back {
+  background: #f02e82;
+  float: right;
+  height: 30px;
+  border-radius: 50%;
+  max-width: 30px;
+  margin-right: 30px; 
+  margin-top: -2rem; 
+}
+
+h1 {
+  display: flex;
+  font-family: lobster;
+  color: #f02e82;
+  font-size: 2.5em;
+  margin-left: 70px;
+  margin-top: 4rem;
+  padding-bottom:20px ;
+  justify-content: center;
+}
+
+h2{
+  font-family: 'Caveat', cursive;
+  color:#f02e82;
+  margin-top: 2rem;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+ul {
+  margin-top: -80px;
+}
+
+ul li {
+  margin-left: 50px;
+  list-style: none;
+  line-height: 40px;
+  list-style-image: url('../img/pngegg.png');
+  }
+
+  
+ul li a{
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  color: whitesmoke;
+ }
+
+ ul li a:hover{
+    color: rgb(12, 224, 214);
+ }
+ 
+  /* mobiles */
+
+ @media (max-width: 810px) {
+
+  #back {
+    margin: 5px;
+  }
+
+.event {
+      display: block;
+      margin: auto;  
+        }
+
+    
+ #map {
+  height: 380px;
+  width: 100%;
+  margin-top: -4rem;
+  float: right;
+  margin-left: 6rem;
+  padding: 0;
+}
+
+h1 {
+  display:flex;
+  justify-content: center;
+  margin-bottom: -110px; 
+  font-size: 2em;
+  margin-left: 0;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+   }
+
+ul{
+margin: 0;
+padding-bottom: 40px;
+}
+
+ul li {
+  margin-left: 10px;
+  align-items: center;
+}
+
+ul li a:hover {
+  color: rgb(12, 224, 214);
+  }
+}
+
+
+footer {
+  margin-top: 7rem;
+  height: 10px;
+  width: 100%;
+ 
+ 
+  }
+
+img.octop {
+  color: whitesmoke;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding-left: 10px;
+}  
+
+  .foo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+         }
+
+ .copyright {
+  color:whitesmoke;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
+   } 
+ 
