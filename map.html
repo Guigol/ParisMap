@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="shortcut icon" href="img/ggm2.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/map.css" />
+    
+  </head>
+  <body>
+
+           
+                <h1>Les prochains concerts...</h1> 
+                <br></br>       
+                                
+      <div class="event">
+                
+          <ul>
+            <h2>Cliquer sur une adresse ci-dessous :</h2>
+            <li><a href="#" onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(0));">Le 12 Janvier 2024 à 19h00 au QG, 103 rue Oberkampf 75011 Paris</a></li><br>
+            <li><a href="#" onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(1));">Le 5 Février 2024 à 19h30 au Simple O, 18 Av. de la République 93170 Bagnolet</a></li><br>
+            <li><a href="#" onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(2));">Le 6 et 7 Mars 2024 à 20h00 sur la péniche Antipode, 55 quai de Seine 75019 Paris</a></li>
+          </ul>
+         
+          <br></br>
+       
+    <!--The div element for the map -->
+      <div id="map"></div>
+   </div> 
+
+
+  <footer>
+
+      <div class="foo">
+          <p class="copyright"> &copy; 2023 AlAugereau, Inc </p>
+          <img src="./img/pieuvre.svg" alt="pieuvre" class="octop"/>
+      </div>
+  
+  </footer>
+    
+    <script type="module">
+      import('./js/map.js').then(module => module.initMap());
+  </script>
+    
+  </body>
+</html>
