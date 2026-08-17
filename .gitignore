@@ -1,2 +1,9 @@
 ### MAC OS ###
 *.DS_Store
+
+### WINDOWS ###
+.env
+.txt
+.cache
+.temp
+.vscode-test
