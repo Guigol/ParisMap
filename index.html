@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/album.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/map.css" />
+    
+  </head>
+  <body>
+
+    <a href="index.html"><img id="back"  src="img/backward.png" alt="backward" title="backward"></a>
+       
+                <h1>Les prochains concerts...</h1> 
+                <br></br>       
+    
+ 
+<h2>Cliquer sur une affiche ci-dessous </h2>
+ <div class="event">
+                
+
+         
+
+        <div class="image-gallery">
+           
+                    
+           <img src="img/concert5.jpg" alt="Notre Dame du bon secours" data-tooltip="Notre Dame du bon secours"
+                onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(0));"
+                style="cursor: pointer; width: 200px;">
+
+          <img src="img/concert6.jpg" alt="Brasserie Les Eiders" data-tooltip="Brasserie Les Eiders"
+                onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(1));"
+                style="cursor: pointer; width: 200px;">
+
+          <img src="img/concert7.jpg" alt="Les Nouveaux Sauvages" data-tooltip="Les Nouveaux Sauvages"
+                onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(2));"
+                style="cursor: pointer; width: 200px;">
+
+          <img src="img/concert8.jpg" alt="Le Nouvô Cosmos" data-tooltip="Le Nouvô Cosmos"
+                onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(3));"
+                style="cursor: pointer; width: 200px;">
+
+
+          <img src="img/concert9.jpg" alt="Le Nouvô Cosmos" data-tooltip="Le Nouvô Cosmos"
+                onclick="event.preventDefault(); import('./js/map.js').then(module => module.showMarker(4));"
+                style="cursor: pointer; width: 200px;">
+          
+          
+          
+        </div> 
+       
+    <!--The div element for the map -->
+      <div id="map"></div>
+    
+    </div>  
+
+
+  <footer>
+
+      <div class="foo">
+          <p class="copyright"> &copy; 2023 AlAugereau, Inc </p>
+          <img src="./img/pieuvre.svg" alt="pieuvre" class="octop"/>
+      </div>
+  
+  </footer>
+    
+    <script type="module">
+      import('./js/map.js').then(module => module.initMap());
+  </script>
+    
+  </body>
+</html>

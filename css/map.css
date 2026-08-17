@@ -6,19 +6,19 @@
  
 .event {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-top: 3rem;
 }
 
 
  #map {
-  height: 340px;
-  width: 40%;
-  margin-top: -3rem;
-  float: right;
-  margin-left: 5rem;
-  padding: 0;
+  height: 320px;
+  width: 80%;
+  margin: 0 auto 0 auto; /* Centrage horizontal */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* Bonus esthétique */
+  
   }
   
   /*
@@ -45,44 +45,50 @@
 
 h1 {
   display: flex;
-  font-family: lobster;
+  font-family: "Spicy Rice", serif;
   color: #f02e82;
   font-size: 2.5em;
   margin-left: 70px;
   margin-top: 4rem;
-  padding-bottom:20px ;
-  justify-content: center;
+  justify-content: start;
 }
 
 h2{
+display: flex;
+justify-content: center;
   font-family: 'Caveat', cursive;
   color:#f02e82;
-  margin-top: 2rem;
+  font-size: 35px;
+  margin-top: -3rem;
   margin-left: 30px;
+  margin-bottom: -35px;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex-wrap: wrap;
+  padding: 50px;
   margin-bottom: 50px;
 }
 
-ul {
-  margin-top: -80px;
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
-ul li {
-  margin-left: 50px;
-  list-style: none;
-  line-height: 40px;
-  list-style-image: url('../img/pngegg.png');
-  }
-
-  
-ul li a{
-  text-decoration: none;
-  font-family: 'Caveat', cursive;
-  color: whitesmoke;
- }
-
- ul li a:hover{
-    color: rgb(12, 224, 214);
- }
  
   /* mobiles */
 
@@ -101,10 +107,11 @@ ul li a{
  #map {
   height: 380px;
   width: 100%;
-  margin-top: -4rem;
   float: right;
   margin-left: 6rem;
-  padding: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 h1 {
@@ -112,13 +119,13 @@ h1 {
   justify-content: center;
   margin-bottom: -110px; 
   font-size: 2em;
-  margin-left: 0;
+  margin-left: 30px;
 }
 
 h2 {
-  margin-top: 30px;
-  margin-left: -10px;
-  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-bottom: -50px;
    }
 
 ul{
@@ -136,14 +143,16 @@ ul li a:hover {
   }
 }
 
+.image-gallery img {
+    padding: 0;
+}
+
 
 footer {
-  margin-top: 7rem;
-  height: 10px;
+   height: 10px;
   width: 100%;
- 
- 
-  }
+  margin-top: 30px;
+   }
 
 img.octop {
   color: whitesmoke;
@@ -158,6 +167,7 @@ img.octop {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
          }
 
  .copyright {
